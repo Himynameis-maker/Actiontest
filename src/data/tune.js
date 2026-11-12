@@ -6,12 +6,12 @@
  * farTint: 奥側の手足の色かぶせ(リロードで反映)
  */
 SL.data.tune = {
-  joint: {head: [0, 0], torso: [0, 0], hair: [0, 0], shoulder: [0, 0], elbow: [0, 0], wrist: [0, 0], hip: [0, 0], knee: [0, 0], ankle: [0, 0]},
-  bias: {stand: {tor: 0, head: 0, sp: 0, hair: 0}, run: {tor: 0, head: 0, sp: 0, hair: 0}},
+  joint: {head: [0, 0], torso: [0, 0], shoulder: [0, 0], elbow: [0, 0], wrist: [0, 0], hip: [0, 0], knee: [0, 0], ankle: [0, 0]},
+  bias: {stand: {tor: 0, head: 0, sp: 0}, run: {tor: 0, head: 0, sp: 0}},
   hurt: {x: -9, y: -100, w: 18, h: 100},
-  hit: {from: 14, to: 98, r: 4},
+  hit: {from: 12, to: 80, r: 4},
   move: {speed: 190, cycle: 11},
   view: {zoom: 2.2},
-  rig: {scale: 0.11, hand: 0.3},
+  rig: {scale: 0.078, hand: 0.3},
   farTint: 'rgba(80,90,130,0.45)'
 };
