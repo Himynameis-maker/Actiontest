@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Soulike β – Rig Bench</title><link rel="stylesheet" href="css/style.css"></head>
+<body><main>
+<h1>Soulike β – プレイヤー骨組みベンチ</h1>
+<p class="sub">A/D か ←/→ で走る。離すと立つ。下のスライダーは即反映（自動でlocalStorage保存）。詳細は docs/CONTEXT.md</p>
+<canvas id="c"></canvas><div id="hud" class="bar"></div><div id="panel"></div>
+</main>
+<!-- file:// で動かすため ES module は使わず、グローバル名前空間 SL に登録。読み込み順に依存 -->
+<script src="src/util.js"></script>
+<script src="src/data/parts.js"></script>
+<script src="src/data/tune.js"></script>
+<script src="src/data/poses.js"></script>
+<script src="src/rig.js"></script>
+<script src="src/editor.js"></script>
+<script src="src/main.js"></script>
+</body></html>
