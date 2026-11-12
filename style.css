@@ -1,0 +1,11 @@
+:root{color-scheme:dark;--bg:#141417;--fg:#e9e7e2;--panel:#202026;--line:#37373f;--accent:#a8222b}
+body{margin:0;padding:12px;background:var(--bg);color:var(--fg);font:14px/1.5 "Hiragino Sans","Noto Sans JP",system-ui,sans-serif}
+main{max-width:900px;margin:0 auto}h1{font-size:1.1rem;margin:0}.sub{margin:2px 0 10px;opacity:.6;font-size:.85rem}
+canvas{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#1b1b21}
+.bar{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin-top:8px;padding:8px 10px;background:var(--panel);border-radius:6px}
+button{font:inherit;padding:4px 12px;border:0;border-radius:4px;background:var(--accent);color:#fff;cursor:pointer}
+button.on{outline:2px solid var(--fg)}
+details{margin:6px 0;padding:6px 10px;background:var(--panel);border-radius:6px}details details{background:#2a2a32}
+summary{cursor:pointer;font-weight:600}
+#panel label{display:flex;gap:8px;align-items:center;font-size:.85rem}#panel label span{width:90px;flex:none}
+#panel input[type=range]{flex:1;min-width:0}#panel input[type=number]{width:64px}
