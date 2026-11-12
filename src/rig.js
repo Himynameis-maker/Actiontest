@@ -89,7 +89,7 @@
     leg(p.thA, p.shA, false, 0);
     put('torso', J('torso', off('pelvis', 'top')), p.tor, () => {
       put('head', J('head', off('torso', 'head')), p.head, null, false,
-        () => put('hair', J('hair', off('head', 'hair')), p.hair - p.tor - p.head, null, false));
+        P().hair ? () => put('hair', J('hair', off('head', 'hair')), (p.hair || 0) - p.tor - p.head, null, false) : null); // hair未定義(parts.jsに無い)の間は描かない
       arm(p, p.uaR, p.faR, false, true);
     }, false, () => arm(p, p.uaL, p.faL, true, false));
     ctx.restore();
